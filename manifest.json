@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.panelalpha.watch",
+  "name": "PanelAlpha Watch",
+  "version": "1.0.0",
+  "author": "PanelAlpha",
+  "license": "MIT",
+  "description": "PanelAlpha Engine in your Omarchy bar. One icon, one panel: projects on your own VPS, live deploy status, container and database state, and the buttons to redeploy, restart, stop, start, cancel, and suspend. Configure it with the engine URL and an API token. No daemon and no SSH.",
+  "kinds": ["service", "bar-widget"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "PanelAlpha",
+    "description": "Projects, deploys, and server load on your PanelAlpha Engine",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
